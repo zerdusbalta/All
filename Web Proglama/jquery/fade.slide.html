@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+
+<body>
+
+    <div>
+        <p>Sıfırdan İleri Düzey Web Geliştirme</p>
+
+        <img src="manzara01.jpeg" width="150px">
+
+    </div>
+
+    <br><br>
+
+
+
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="toggle">Toggle</button>
+
+    <br><br>
+
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadeto">Fade </button>
+    <button id="toggle2">Toggle</button>
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#slideup").click(function () {
+                $("div").slideUp(3000);
+            });
+
+            $("#slidedown").click(function () {
+                $("div").slideDown(2000, function () {
+                    alert("div gösterildi");
+                });
+
+
+            });
+            $("#toggle").click(function () {
+                $("div").slideToggle("slow");
+            });
+
+
+            $("#fadein").click(function () {
+                $("div").fadeIn("slow");
+            });
+
+            $("#fadeout").click(function () {
+                $("div").fadeOut(1000, function () {
+                    alert("div gizlendi");
+                });
+            });
+
+            $("#fadeto").click(function () {
+                $("div").fadeTo("slow", 0.2);
+
+
+            });
+            $("#toggle2").click(function () {
+                $("div").fadeToggle("slow");
+            });
+        });
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

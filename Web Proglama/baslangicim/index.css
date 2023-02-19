@@ -1,0 +1,18 @@
+
+*/ Group Selectors
+
+
+(p) -->Tüm p etiketleri 
+
+(div p) -->div içerisindeki tüm petiketleri 
+
+(div, p) -->Tüm div ve tüm p etiketleri 
+
+(p + div) -->p etiketinden sonra gelen div etiketi 
+
+*/
+
+
+  p { 
+      color: red;
+  }

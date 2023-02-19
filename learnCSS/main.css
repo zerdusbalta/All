@@ -1,0 +1,53 @@
+
+body {
+    /* background-image: url(zebra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #444;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Macondo', serif, sans-serif;
+}
+
+h2 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Open+Sans:wght@300', serif, sans-serif;
+}
+
+h3 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Spirax', serif,sans-serif;
+}
+
+.formatting {
+    font-size: 25px;
+    line-height: 2em;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.borderImg {
+    border: 3px dashed red;
+}
+
+ul li {
+    color: white;
+    font-size: 20px;
+}
+
+ul>li {
+    color: yellow;
+}

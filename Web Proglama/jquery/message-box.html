@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #message-box {
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+        }
+
+        #header{
+            cursor: pointer;
+            height: 20px;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+
+        #content {
+            height: 200px;
+            padding: 10px;
+            display: none;
+
+        }
+
+        #close {
+            float: right;
+        }
+
+        #close:hover{
+            color: gray;
+        }
+
+    </style>
+
+    <script>
+
+ $(function(){
+
+    $("#header").click(function(){
+          $("#content").toggle("slow");
+    });
+
+    $("#close").click(function(){
+        $("#message-box").hide("slow");
+    });
+
+ });
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <div id="message-box">
+        <div id="header">
+            <span id="close">X</span> Mesajınız var
+        </div>
+        <div id="content">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
